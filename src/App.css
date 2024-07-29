@@ -1,0 +1,203 @@
+/* App.css */
+
+/* Меню */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  min-height: 1500px;
+  width: 200px;
+  min-width: 200px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.overmenu {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.overmenu:hover {
+  background-color: #444;
+}
+
+.li_text p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.toggle-submenu {
+  transition: transform 0.3s ease;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #555;
+  position: relative;
+}
+
+.submenu li {
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submenu li:hover {
+  background-color: #666;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu > li.open .submenu {
+  display: block;
+}
+
+.menu > li.open .toggle-submenu {
+  transform: rotate(90deg);
+}
+
+
+/* ////////////////////////// */
+
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.App.ctrl-pressed .submenu a,
+.App.ctrl-pressed .submenu li,
+.App.ctrl-pressed {
+  cursor: copy;
+}
+
+.notifications {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  position: absolute;
+  right: 20px;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+
+.notification-disappearing {
+  opacity: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.page_with_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.articles-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-block {
+  margin-bottom: 20px;
+  display: flex;
+  margin: 30px;
+}
+
+.article-header {
+  font-size: 32px;
+  font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+}
+
+.article-content h1 {
+  margin: 0;
+}
+
+.article-content {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.article-picture {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: 400px;
+}
+
+.article-picture img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.article-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.article {
+  max-width: 1340px;
+  margin-left: 10px;
+}
