@@ -23,10 +23,7 @@ function App() {
   const addNotification = (message) => {
     const id = new Date().getTime();
     setNotifications(prevNotifications => [...prevNotifications, { id, message }]);
-    setTimeout(() => {
-      document.getElementById(`notification-${id}`).classList.add('notification-disappearing');
-      setTimeout(() => removeNotification(id), 3000); 
-    }, 3000); 
+    setTimeout(() => removeNotification(id), 6000); 
   };
 
   const removeNotification = (id) => {
@@ -35,7 +32,7 @@ function App() {
 
   useEffect(() => {
     if (selectedArticleIds.length === 0) {
-      const defaultArticleId = 1;
+      const defaultArticleId = 1; 
       setSelectedArticleIds([defaultArticleId]);
     }
   }, [selectedArticleIds]);
