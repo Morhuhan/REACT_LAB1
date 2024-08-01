@@ -18,12 +18,12 @@ function Article({ selectedArticleId }) {
         .then(data => {
           console.log('Fetched article:', data);
           setArticle(data);
-          setError(null); // Clear any previous error
+          setError(null); 
         })
         .catch(error => {
           console.error('Error fetching article:', error);
           setError(error);
-          setArticle(null); // Clear any previous article
+          setArticle(null); 
         });
     }
   }, [selectedArticleId]);

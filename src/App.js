@@ -23,7 +23,7 @@ function App() {
   const addNotification = (message) => {
     const id = new Date().getTime();
     setNotifications(prevNotifications => [...prevNotifications, { id, message }]);
-    setTimeout(() => removeNotification(id), 1000);
+    setTimeout(() => removeNotification(id), 3000);
   };
 
   const removeNotification = (id) => {
@@ -31,10 +31,14 @@ function App() {
   };
 
   useEffect(() => {
+    const defaultArticleId = 1; 
     if (selectedArticleIds.length === 0) {
-      const defaultArticleId = 1; 
       setSelectedArticleIds([defaultArticleId]);
     }
+  }, [selectedArticleIds]);
+
+  useEffect(() => {
+    console.log(`Selected articles count: ${selectedArticleIds.length}`);
   }, [selectedArticleIds]);
 
   useEffect(() => {
