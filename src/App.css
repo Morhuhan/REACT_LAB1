@@ -1,5 +1,3 @@
-/* App.css */
-
 /* Меню */
 .menu {
   list-style: none;
@@ -205,10 +203,6 @@
   margin-left: 10px;
 }
 
-
-
-
-
 /* ////////////////////// Гостевая книга */
 
 .guest-book-container {
@@ -227,7 +221,7 @@
 }
 
 .guest-book-icon:hover {
-  transform: scale(0.9); /* Уменьшает изображение до 90% от оригинального размера */
+  transform: scale(0.9); 
 }
 
 

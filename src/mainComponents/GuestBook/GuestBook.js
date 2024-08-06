@@ -27,10 +27,6 @@ function GuestBook() {
   }, []);
 
   const handleSubmit = () => {
-    if (newMessage.name.length > 255 || newMessage.text.length > 255) {
-      setValidationError('Имя и сообщение не должны превышать 255 символов.');
-      return;
-    }
 
     fetch('http://localhost:8080/api/messages', {
       method: 'POST',
@@ -55,6 +51,11 @@ function GuestBook() {
         console.error('Error submitting message:', error);
         setError(error);
       });
+  };
+
+  const handleInputChange = (field, value) => {
+      setNewMessage({ ...newMessage, [field]: value });
+      setValidationError('');
   };
 
   return (
@@ -87,11 +88,13 @@ function GuestBook() {
               className='userName'
               placeholder="Ваше имя"
               value={newMessage.name}
+              onChange={(e) => handleInputChange('name', e.target.value)}
             />
             <textarea
               className='userText'
               placeholder="Ваше сообщение"
               value={newMessage.text}
+              onChange={(e) => handleInputChange('text', e.target.value)}
             />
             <button onClick={handleSubmit}>Отправить</button>
           </div>

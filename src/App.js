@@ -83,7 +83,7 @@ function App() {
         <ArticlesArea selectedArticleIds={selectedArticleIds} />
       </div>
       <Footer />
-      <GuestBook /> {/* Добавляем гостевую книгу */}
+      <GuestBook /> 
     </div>
   );
 }

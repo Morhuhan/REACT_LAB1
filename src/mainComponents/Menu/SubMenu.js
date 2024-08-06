@@ -4,7 +4,7 @@ function SubMenu({ subitem, handleSelectArticle }) {
   const handleClick = (e) => {
     e.preventDefault();
     console.log(`Submenu item clicked: ${subitem.id}`);
-    handleSelectArticle(subitem.id, e.ctrlKey || e.metaKey); // передаем информацию о нажатии клавиши Ctrl
+    handleSelectArticle(subitem.id, e.ctrlKey || e.metaKey);
   };
 
   return (
