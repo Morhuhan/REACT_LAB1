@@ -57,15 +57,6 @@ function GuestBook() {
       });
   };
 
-  const handleInputChange = (field, value) => {
-    if (value.length <= 255) {
-      setNewMessage({ ...newMessage, [field]: value });
-      setValidationError('');
-    } else {
-      setValidationError('Имя и сообщение не должны превышать 255 символов.');
-    }
-  };
-
   return (
     <div className="guest-book-container">
       <img
@@ -96,13 +87,11 @@ function GuestBook() {
               className='userName'
               placeholder="Ваше имя"
               value={newMessage.name}
-              onChange={(e) => handleInputChange('name', e.target.value)}
             />
             <textarea
               className='userText'
               placeholder="Ваше сообщение"
               value={newMessage.text}
-              onChange={(e) => handleInputChange('text', e.target.value)}
             />
             <button onClick={handleSubmit}>Отправить</button>
           </div>
