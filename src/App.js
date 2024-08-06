@@ -3,6 +3,7 @@ import Header from './mainComponents/header.js';
 import Menu from './mainComponents/Menu/menu.js';
 import ArticlesArea from './mainComponents/Article/ArticlesArea';
 import Footer from './mainComponents/Footer.js';
+import GuestBook from './mainComponents/GuestBook/GuestBook.js'; 
 import './App.css';
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
         <ArticlesArea selectedArticleIds={selectedArticleIds} />
       </div>
       <Footer />
+      <GuestBook /> {/* Добавляем гостевую книгу */}
     </div>
   );
 }

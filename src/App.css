@@ -204,3 +204,121 @@
   max-width: 1340px;
   margin-left: 10px;
 }
+
+
+
+
+
+/* ////////////////////// Гостевая книга */
+
+.guest-book-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.guest-book-icon {
+  width: 111px;
+  height: 110px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.guest-book-icon:hover {
+  transform: scale(0.9); /* Уменьшает изображение до 90% от оригинального размера */
+}
+
+
+.guest-book {
+  width: 300px;
+  height: 500px;
+  background: LightSteelBlue;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.guest-book-header {
+  background: LightCyan;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guest-book-header h2 {
+  margin: 0;
+}
+
+.guest-book-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.guest-book-messages {
+  height: 270px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.guest-book-message-block {
+  margin-bottom: 10px;
+  max-height: 100px;
+  overflow-x: auto;
+}
+
+.guest-book-message-name {
+  font-weight: bold;
+  max-width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.guest-book-message-text {
+  max-width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  margin-left: 10px;
+}
+
+.guest-book-user-container {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.guest-book-user-container input,
+.guest-book-user-container textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.userName {
+  width: 200px;
+}
+
+.userText {
+  max-width: 240px;
+  max-height: 64px;
+}
+
+.guest-book-user-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.guest-book-user-container button:hover {
+  background-color: #0056b3;
+}
