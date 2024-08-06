@@ -1,0 +1,11 @@
+<h3>The Sun</h3>
+
+<p>The Sun is a major focus of space exploration. Being above the atmosphere in particular and Earth's magnetic field gives access to the solar wind and infrared and ultraviolet radiations that cannot reach Earth's surface. The Sun generates most space weather, which can affect power generation and transmission systems on Earth and interfere with, and even damage, satellites and space probes. Numerous spacecraft dedicated to observing the Sun, beginning with the Apollo Telescope Mount, have been launched and still others have had solar observation as a secondary objective. Parker Solar Probe, launched in 2018, will approach the Sun to within 1/9th the orbit of Mercury.
+
+<p>The Sun is a G-type main-sequence star (G2V), informally called a yellow dwarf, though its light is actually white. It formed approximately 4.6 billion[a] years ago from the gravitational collapse of matter within a region of a large molecular cloud. Most of this matter gathered in the center, whereas the rest flattened into an orbiting disk that became the Solar System. The central mass became so hot and dense that it eventually initiated nuclear fusion in its core. Every second, the Sun's core fuses about 600 billion kilograms (kg) of hydrogen into helium and converts 4 billion kg of matter into energy.</p>
+
+<h3>Mercury</h3>
+
+<p> Mercury remains the least explored of the Terrestrial planets. As of May 2013, the Mariner 10 and MESSENGER missions have been the only missions that have made close observations of Mercury. MESSENGER entered orbit around Mercury in March 2011, to further investigate the observations made by Mariner 10 in 1975 (Munsell, 2006b). A third mission to Mercury, scheduled to arrive in 2025, BepiColombo is to include two probes. BepiColombo is a joint mission between Japan and the European Space Agency. MESSENGER and BepiColombo are intended to gather complementary data to help scientists understand many of the mysteries discovered by Mariner 10's flybys.
+
+Flights to other planets within the Solar System are accomplished at a cost in energy, which is described by the net change in velocity of the spacecraft, or delta-v. Due to the relatively high delta-v to reach Mercury and its proximity to the Sun, it is difficult to explore and orbits around it are rather unstable.</p>
